@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="second_activity">Второй экран</string>
+    <string name="select_period">Выберите период</string>
+    <string name="select_coordinates">Выберите координаты</string>
+    <string name="select_max_radius">Выберите максимальный радиус</string>
+    <string name="load_data">Загрузить данные</string>
+    <string name="chart_title">График землетресений</string>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="magnitude_array">
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>3.0</item>
+        <item>4.0</item>
+        <item>5.0</item>
+        <item>6.0</item>
+        <item>7.0</item>
+        <item>8.0</item>
+        <item>9.0</item>
+        <item>10.0</item>
+        <!-- и так далее, можно добавить столько значений, сколько вам нужно -->
+    </string-array>
+    <string-array name="period_array">
+        <item>1</item>
+        <item>7</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="coordinates_array">
+        <!-- Values in the format "Latitude, Longitude" -->
+        <item>55.751244,37.618423</item> <!-- Moscow -->
+        <item>59.938732,30.316229</item> <!-- St. Petersburg -->
+        <item>55.008353,82.935732</item> <!-- Novosibirsk -->
+        <item>56.838011,60.597465</item> <!-- Ekaterinburg -->
+        <item>-6.208763,106.845599</item> <!-- Jakarta, Indonesia -->
+        <item>40.712776,-74.005974</item> <!-- New York, USA -->
+        <item>36.778259,-119.417931</item> <!-- California, USA -->
+        <item>36.204823,138.252930</item> <!-- Japan -->
+        <item>-33.868820,151.209290</item> <!-- Sydney, Australia -->
+        <item>-14.235004,-51.925282</item> <!-- Brazil -->
+
+    </string-array>
+    <string-array name="max_radius_array">
+        <!-- Это пример, можно указать другие значения радиусов -->
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+
+
+</resources>

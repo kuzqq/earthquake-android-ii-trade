@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <Spinner
+        android:id="@+id/spinner_magnitude2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:entries="@array/magnitude_array"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_time_period"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/button_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Main Activity"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_time_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/period_array"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_radius" />
+
+    <Spinner
+        android:id="@+id/spinner_coordinates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_time_period"
+        android:entries="@array/coordinates_array"
+        app:layout_constraintBottom_toTopOf="@+id/scatter_chart" />
+
+    <Spinner
+        android:id="@+id/spinner_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_coordinates"
+        android:entries="@array/max_radius_array"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_coordinates" />
+
+    <Button
+        android:id="@+id/button_load_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_radius"
+        android:text="@string/load_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scatter_chart" />
+
+    <com.github.mikephil.charting.charts.ScatterChart
+        android:id="@+id/scatter_chart"
+        android:layout_width="410dp"
+        android:layout_height="416dp"
+        android:layout_below="@id/button_load_data"
+        app:layout_constraintBottom_toTopOf="@+id/button_main"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <ToggleButton
+        android:id="@+id/toggle_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textOff="Notifications Off"
+        android:textOn="Notifications On"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_magnitude2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_earthquake_info"
+        android:layout_width="246dp"
+        android:layout_height="132dp"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_magnitude2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
